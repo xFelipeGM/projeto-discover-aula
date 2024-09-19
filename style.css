@@ -31,10 +31,11 @@
 
 body {
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 .container {
-    width: 100%;
+    width: 360px;
     max-width: 588px;
     margin-top: 56px;
     margin: 56px auto 0px;
@@ -160,4 +161,14 @@ footer p {
 footer span {
     text-decoration: underline;
     color: var(--text-color);
+}
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
 }
